@@ -1,0 +1,20 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Reach out to us!</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+            {%- if site.email -%}
+            <li><a class="u-email" target="_blank" href="https://mail.google.com/mail/?view=cm&to={{ site.email }}&su=Query for&body=Hello Sagar">{{ site.email }}</a></li>
+            <li><a target="_blank" href="https://wa.me/{{ site.whatsapp }}?text={{ page.whatsapp_text}}">WhatsApp</a></li>
+            {%- endif -%}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</footer>
